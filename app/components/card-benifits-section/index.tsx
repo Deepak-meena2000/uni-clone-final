@@ -1,6 +1,7 @@
+import { ImagesEnum } from "@/app/constants/images";
 import Image from "next/image";
 
-const FourthSection = () => {
+const CardBenifitsSection = () => {
   return (
     <section className="py-12 lg:py-[100px] bg-black">
       <div className="w-full max-w-7xl mx-auto px-6 md:px-4 md:flex md:justify-between">
@@ -9,7 +10,7 @@ const FourthSection = () => {
             <div className="w-full h-36 relative">
               <Image
                 className="absolute md:relative md:left-auto md:-translate-x-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-20 md:w-28 h-auto mx-auto md:mx-0"
-                src="https://www.uni.cards/images/nx-wave/whatsapp_bubble.webp"
+                src={ImagesEnum.WHATSAPP_BUBBLE}
                 alt="WhatsApp Bubble"
                 width={80}
                 height={80}
@@ -33,7 +34,7 @@ const FourthSection = () => {
             <div className="w-full h-36 relative">
               <Image
                 className="absolute md:relative md:left-auto md:-translate-x-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-20 md:w-28 h-auto mx-auto md:mx-0"
-                src="https://www.uni.cards/images/nx-wave/rupee_bubble.webp"
+                src={ImagesEnum.RUPEE_BUBBLE}
                 alt="Rupee Bubble"
                 width={80}
                 height={80}
@@ -57,7 +58,7 @@ const FourthSection = () => {
             <div className="w-full h-36 relative">
               <Image
                 className="absolute md:relative md:left-auto md:-translate-x-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-20 md:w-28 h-auto mx-auto md:mx-0"
-                src="https://www.uni.cards/images/nx-wave/antivirus_bubble.webp"
+                src={ImagesEnum.ANTIVIRUS_BUBBLE}
                 alt="Antivirus Bubble"
                 width={80}
                 height={80}
@@ -72,7 +73,7 @@ const FourthSection = () => {
               <span>
                 <Image
                   className="mt-6"
-                  src="https://www.uni.cards/images/pcidss_cert.svg"
+                  src={ImagesEnum.PCI}
                   alt="PCI Logo"
                   width={150}
                   height={50}
@@ -86,4 +87,4 @@ const FourthSection = () => {
   );
 };
 
-export default FourthSection;
+export default CardBenifitsSection;

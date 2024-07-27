@@ -41,10 +41,7 @@ export const Header = () => {
               stroke="#fff"
               stroke-width="2"
             >
-              <path
-                stroke-linecap="round"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              ></path>
+              <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
           </span>
         </div>

@@ -1,3 +1,4 @@
+import { ImagesEnum } from "@/app/constants/images";
 import Image from "next/image";
 
 const ApplyNow = () => {
@@ -8,7 +9,7 @@ const ApplyNow = () => {
           <button className="p-4 rounded-lg z-10 flex justify-between items-center bg-[#FDEF78] text-black -mt-2 disabled:bg-[#AEAB8C]">
             <span>Apply now</span>
             <Image
-              src="https://www.uni.cards/images/right_arrow.svg"
+              src={ImagesEnum.RIGHT_ARROW}
               alt="right_arrow"
               width={21}
               height={21}

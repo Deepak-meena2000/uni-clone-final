@@ -1,4 +1,4 @@
-const SixthSection = () => {
+const GuideLinesSection = () => {
   return (
     <section className="flex justify-center items-center text-center text-[#BFC9CC] text-base sm:text-xl md:text-2xl bg-black py-16 px-5 sm:px-8 md:px-12">
       <div className="max-w-3xl">
@@ -11,4 +11,4 @@ const SixthSection = () => {
   );
 };
 
-export default SixthSection;
+export default GuideLinesSection;

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./index.module.css";
+import { ImagesEnum } from "@/app/constants/images";
 
-const FifthSection = () => {
+const PartnershipSection = () => {
   return (
     <section className={`${styles.section} ${styles.sectionLg}`}>
       <div className={`${styles.container} ${styles.containerMd}`}>
@@ -24,7 +25,7 @@ const FifthSection = () => {
           >
             <Image
               className={styles.partnerLogo}
-              src="https://www.uni.cards/images/SBM.svg"
+              src={ImagesEnum.SBM}
               alt="SBM Bank"
               width={150}
               height={50}
@@ -35,7 +36,7 @@ const FifthSection = () => {
           >
             <Image
               className={styles.partnerLogo}
-              src="https://www.uni.cards/images/yes-bank.svg"
+              src={ImagesEnum.YES_BANK}
               alt="Yes Bank"
               width={150}
               height={50}
@@ -47,4 +48,4 @@ const FifthSection = () => {
   );
 };
 
-export default FifthSection;
+export default PartnershipSection;

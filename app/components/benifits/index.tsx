@@ -1,19 +1,18 @@
-"use client";
-
+import { ImagesEnum } from "@/app/constants/images";
 import Image from "next/image";
 
-const SecondSection = () => {
+const BenifitsSection = () => {
   return (
     <section className="py-12 md:py-[150px]">
-      <FirstSection />
+      <CashBackSection />
       <ImageSection />
     </section>
   );
 };
 
-export default SecondSection;
+export default BenifitsSection;
 
-const FirstSection = () => {
+const CashBackSection = () => {
   return (
     <section>
       <div className="w-full max-w-7xl mx-auto px-6 md:px-4 undefined">
@@ -56,7 +55,7 @@ const FirstSection = () => {
           >
             <Image
               alt="down_arrow"
-              src="https://www.uni.cards/images/down_arrow.svg"
+              src={ImagesEnum.DOWN_ARROW}
               loading="lazy"
               className="w-9 md:w-14"
               width={150}
@@ -97,7 +96,7 @@ const ImageSection = () => {
             <div className="flex justify-center overflow-hidden">
               <div className="relative w-[280px] lg:w-[448px]">
                 <Image
-                  src="https://www.uni.cards/images/one_percent_cashback.png"
+                  src={ImagesEnum.CASHBACK}
                   alt="1% Cashback"
                   width={448}
                   height={280}
@@ -124,7 +123,7 @@ const ImageSection = () => {
             <div className="flex justify-center overflow-hidden">
               <div className="relative w-[280px] lg:w-[448px]">
                 <Image
-                  src="https://www.uni.cards/images/five_x_rewards.png"
+                  src={ImagesEnum.REWARDS}
                   alt="5x Rewards"
                   width={448}
                   height={280}
@@ -150,7 +149,7 @@ const ImageSection = () => {
             <div className="flex justify-center overflow-hidden">
               <div className="relative w-[280px] lg:w-[448px]">
                 <Image
-                  src="https://www.uni.cards/images/forex_globe.png"
+                  src={ImagesEnum.FOREX_GLOBE}
                   alt="Zero Forex Markup"
                   width={448}
                   height={280}

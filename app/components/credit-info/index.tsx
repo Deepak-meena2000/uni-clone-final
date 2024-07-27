@@ -1,12 +1,11 @@
-"use client";
-
+import { ImagesEnum } from "@/app/constants/images";
 import Image from "next/image";
 
-const ThirdSection = () => {
+const CreditInfoSection = () => {
   return (
     <section className="py-12 lg:py-[100px] bg-black relative">
       <Image
-        src="https://www.uni.cards/images/circles.png"
+        src={ImagesEnum.CARD_CIRCLES}
         alt="circles"
         className="absolute top-0 h-auto w-[70%]"
         width={1200}
@@ -27,7 +26,7 @@ const ThirdSection = () => {
         </div>
         <div className="m-auto w-full md:w-[450px] h-auto md:flex-[50%]">
           <Image
-            src="https://www.uni.cards/images/nx-wave/app_screen_1.webp"
+            src={ImagesEnum.APP_SCREEN}
             alt="App Screen 1"
             loading="lazy"
             className="m-auto w-[80%] h-auto"
@@ -51,7 +50,7 @@ const ThirdSection = () => {
         </div>
         <div className="m-auto w-full md:w-[450px] h-auto md:flex-[50%]">
           <Image
-            src="https://www.uni.cards/images/nx-wave/app_screen_2.webp"
+            src={ImagesEnum.APP_SCREEN_2}
             alt="App Screen 2"
             loading="lazy"
             className="m-auto w-[80%] h-auto"
@@ -64,4 +63,4 @@ const ThirdSection = () => {
   );
 };
 
-export default ThirdSection;
+export default CreditInfoSection;

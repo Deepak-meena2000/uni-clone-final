@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { ImagesEnum, VideoEnum } from "@/app/constants/images";
 
 const VideoSection = () => {
   const handleSubmit = (e: any) => {
@@ -21,7 +22,7 @@ const VideoSection = () => {
       <div className="relative h-[100vh] w-full flex items-center justify-center">
         <div className="flex flex-col md:flex-row-reverse mx-auto max-w-[1280px] w-full justify-center z-1 bg-transparent">
           <Image
-            src="https://www.uni.cards/images/nx-wave/nx_wave_hero.png"
+            src={ImagesEnum.WAVE_HERO}
             alt="card_asset"
             className="h-auto w-[225px] md:w-[420px] md:h-[420px] max-w-[420px] z-[1] mx-6"
             width={420}
@@ -130,7 +131,7 @@ const VideoSection = () => {
           className="video-container"
         >
           <source
-            src="https://www.uni.cards/videos/nxt_wave_bg.mp4"
+            src={VideoEnum.HERO}
             type="video/mp4"
           />
         </video>
