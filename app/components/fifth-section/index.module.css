@@ -1,0 +1,88 @@
+/* FifthSection.module.css */
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #222627;
+}
+
+.sectionLg {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px; /* 7xl */
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.containerMd {
+  padding-left: 1rem; /* md:px-4 */
+  padding-right: 1rem; /* md:px-4 */
+  text-align: center;
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.2;
+}
+
+.titleMd {
+  font-size: 40px; /* md:text-[40px] */
+  max-width: 960px; /* 6xl */
+}
+
+.primaryGradient {
+  background: linear-gradient(90deg, #8fffef 25%, #f9f490);
+  background-clip: text;
+  color: transparent;
+  box-decoration-break: clone;
+}
+
+.subtitle {
+  margin-top: 1.5rem; /* mt-6 */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #bfc9cc;
+  font-size: 1.5rem; /* 2xl */
+}
+
+.partnerLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6rem; /* md:mt-24 */
+}
+
+.partnerLogoWrapper {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-top: 2.5rem; /* mt-10 */
+  margin-left: 1rem; /* mx-4 */
+  margin-right: 1rem; /* mx-4 */
+}
+
+.partnerLogoWrapperMd {
+  width: 11rem; /* md:w-44 */
+  margin-top: 0; /* md:mt-0 */
+  margin-left: 2rem; /* md:mx-8 */
+  margin-right: 2rem; /* md:mx-8 */
+}
+
+.partnerLogo {
+  width: 100%;
+  height: 100%;
+}
